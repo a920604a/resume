@@ -59,7 +59,7 @@
 													<li>開發圖像檢測演算法</li>
 													<li>開發Web後端</li>
 													<li>協助專案遷移至 docker使專案達成高複用</li>
-													<li>優化演算法效能( 建立Thread pool及多Process)</li>
+													<li>優化演算法效能</li>
 													<li>協助公司架設私有Git 倉庫</li>
 												</ul>
 											</div>
@@ -73,26 +73,33 @@
 										<h2>參與專案</h2>
 									</header>
 									<div class="content">
-											<h3>開發智能缺陷測系統</h3>
+											<h3>智能缺陷檢測平台</h3>
 											<ul>
-												<li>負責回應前端的需求，進行模型訓練並為前端可視化提供與模型相關的數據。</li>
-												<li>使用asyncio和thread來縮短前端回應時間。</li>
-												<li>針對專案使用multi-process，提高效率，大大縮短運行時間。</li>
-												<li>針對專案做出不同docker images和docker-compose使得專案間不互相影響，並做到一鍵部署。</li>
-												<li>將訓練服務與預測服務各自搭建docker，做到訓練端與測試端分離。</li>
-												<li>優化預測程式碼，使用multi-process及multi-thread機制，有效的使用cpu多核的優勢，並提升FPS。</li>
+												<li>負責回應前端的需求，使用Python flask、Pytorch，進行模型訓練並為前端提供可視化功能與模型相關的數據。</li>
+												<li>使用 asyncio 和 thread 來縮短前端回應時間。</li>
+												<li>使用 multi-process 多GPU訓練，成功將時間縮短至原先的3/4。</li>
+												<li>使用docker-compose 定義訓練、資料庫、快取、預測各服務，做到容器拆分，使其他人容易參與專案。</li>
+											</ul>
+											<h3>面板缺陷偵測</h3>
+											<ul>
+												<li>使用Python Pytorch 框架，撰寫物件偵測演算法，自動找出缺陷位置與類別。</li>
+												<li>針對專案需求，使用multi-process及multi-thread機制，提高執行效率，成功將時間縮短至1/2，並提升FPS。</li>
+												<li>針對專案客製化不同docker file和docker-compose 使得專案間不互相影響。</li>
+												<li>將預測服務打包成docker image形式，做到離線下一鍵部署。</li>
+												
+												
 											</ul>
 
 											<h3>手機外觀缺陷檢測</h3>
 											<ul>
-												<li>為了取代人工，引入了自動檢測</li>
-												<li>使用了Keras framework，開發了語義分割演算法(CNN/U-net)。</li>
+												<li>為了取代人工，撰寫Python 程式碼，引入了自動檢測。 </li>
+												<li>使用了Keras 框架，開發了語義分割演算法(CNN/U-net)。</li>
 											</ul>
 
 											<h3>面板缺陷分類</h3>
 											<ul>
-												<li>為了取代人工，引入了自動檢測。 負責使用Tensorflow framework，開發深度學習演算法(CNN/Xception)，並將檢測率從50％提高到90％。 </li>
-												<li>利用weight class及sampler機制，克服imbalanced data問題。 使用transfer learning加速模型收斂時間。</li>
+												<li>工廠自動化，撰寫Python 程式碼，達到了自動檢測目的。 使用Tensorflow 框架，開發深度學習演算法(CNN/Xception)，並成功將檢測率從50％提高到90％。 </li>
+												<li>利用weight class及sampler機制，克服imbalanced data問題、使用transfer learning加速模型收斂時間。</li>
 											</ul>
 										
 									</div>
@@ -114,7 +121,7 @@
 											<span class="icon solid fa-toolbox"></span>
 											<div class="content">
 												<h3>工具</h3>
-												<p>Pytorch, Tensorflow, Flask</p>
+												<p>Pytorch, Tensorflow, Flask, Numpy</p>
 												<p>Git, SQL, Docker, Ubuntu, TOEIC(705)</p>
 											</div>
 										</article>

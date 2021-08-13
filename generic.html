@@ -72,24 +72,32 @@
 									<h2>Projects</h2>
 								</header>
 								<div class="content">
-										<h3>Develop an intelligent defect detection system</h3>
+										<h3>Intelligent defect detection platform</h3>
 										<ul>
-											<li>Responsible for responding to front-end needs, conducting model training and providing model-related data for front-end visualization.</li>
-											<li>take advantage of async and thread to shorten the front-end response time.</li>
-											<li>Utilize multi-process to improve efficiency and greatly shorten running time.</li>
+											<li>Responsible for responding to the needs of the front-end, using Python flask and Pytorch to conduct model training and provide the front-end with visualization functions and model-related data.</li>
+											<li>take advantage of asyncio and thread to shorten the front-end response time.</li>
+											<li>Utilize multi-process multi-GPU training successfully reduced the time to 3/4 of the original.</li>
 											<li>Product different docker images and docker-compose for the project so that the projects do not affect each other and achieve one-click deployment.</li>
-											<li>Optimize the prediction code, use multi-process and multi-thread technology, effectively use the advantages of CPU multi-core, and improve FPS.</li>
+											<li>Use docker-compose to define training, database, cache, and prediction services, and split the container to make it easier for others to participate in the project.</li>
+										</ul>
+
+										<h3>Panel defect detection</h3>
+										<ul>
+											<li>Use the Python Pytorch framework to write an object detection algorithm to automatically find out the defect location and type.</li>
+											<li>According to requirements of the project , multi-process and multi-thread mechanisms are used to improve execution efficiency, successfully reduce the time to 1/2 and increase FPS.</li>
+											<li>Customize different dockerfile and docker-compose for the project so that the projects do not affect each other.</li>
+											<li>Product different docker images and docker-compose for the project so that the projects do not affect each other and achieve one-click deployment.</li>
 										</ul>
 
 										<h3>Mobile phone appearance defect detection</h3>
 										<ul>
-											<li>In order to replace manual work, automatic detection is introduced</li>
+											<li>In order to replace manual work, write Python code and then automatic detection is introduced</li>
 											<li>Using the Keras framework, developed a semantic segmentation algorithm (CNN/U-net)</li>
 										</ul>
 
 										<h3>Panel defect classification</h3>
 										<ul>
-											<li>In order to replace manual work, automatic detection was introduced. Responsible for using Tensorflow framework, developing deep learning algorithms (CNN/Xception), and increasing the detection rate from 50% to 90%.</li>
+											<li>In order to automate the production line, write Python code and then automatic detection was introduced. Responsible for using Tensorflow framework, developing deep learning algorithms (CNN/Xception), and increasing the detection rate from 50% to 90%.</li>
 											<li>Use weight class and sampler mechanism to overcome the problem of imbalanced data. Use transfer learning to speed up the model convergence time.</li>
 										</ul>
 									
